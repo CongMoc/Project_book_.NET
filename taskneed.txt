@@ -1,0 +1,13 @@
+
+ProfileView
+
+
+
+phân lại quyền người dùng
+nhan viên và khách hàng 
+
+nhân viên được phép thêm sửa sách, thống kê khách hàng nào
+thuê nhiều nhất, lượng sách được thuê theo time
+
+logout
+changepass

@@ -1,0 +1,37 @@
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.csproj.AssemblyReference.cache
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.csproj.SuggestedBindingRedirects.cache
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.Properties.Resources.resources
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.csproj.GenerateResource.cache
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.csproj.CoreCompileInputs.cache
+D:\Làm việc\Work\Book\Book\bin\Debug\Book.exe.config
+D:\Làm việc\Work\Book\Book\bin\Debug\Book.exe
+D:\Làm việc\Work\Book\Book\bin\Debug\Book.pdb
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.Views.BookView.resources
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.exe
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.pdb
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.Views.LoginView.resources
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.Views.ChangePassword.resources
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.Views.ManagerView.resources
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.Views.RegisterView.resources
+D:\Làm việc\Work\Book\Book\obj\Debug\Book.Views.UserView.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.csproj.AssemblyReference.cache
+D:\FileWork\Work\Book\Book\obj\Debug\Book.csproj.SuggestedBindingRedirects.cache
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Properties.Resources.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Views.BookView.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Views.LoginView.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Views.ManagerView.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Views.RegisterView.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.csproj.GenerateResource.cache
+D:\FileWork\Work\Book\Book\obj\Debug\Book.csproj.CoreCompileInputs.cache
+D:\FileWork\Work\Book\Book\obj\Debug\Book.exe
+D:\FileWork\Work\Book\Book\obj\Debug\Book.pdb
+D:\FileWork\Work\Book\Book\bin\Debug\Book.exe.config
+D:\FileWork\Work\Book\Book\bin\Debug\Book.exe
+D:\FileWork\Work\Book\Book\bin\Debug\Book.pdb
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Views.MainView.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Views.ProfileView.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Views.CartView.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Views.ChangePassView.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Views.ForgotPasswordView.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Views.HistoryView.resources
+D:\FileWork\Work\Book\Book\obj\Debug\Book.Views.StoryView.resources

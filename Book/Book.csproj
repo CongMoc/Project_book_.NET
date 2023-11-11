@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BBADA42-BEAA-4201-8B23-EC4B2A7AB528}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Book</RootNamespace>
+    <AssemblyName>Book</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\BookModel.cs" />
+    <Compile Include="Models\CartModel.cs" />
+    <Compile Include="Models\CustomerModel.cs" />
+    <Compile Include="Models\IBookReponsitory.cs" />
+    <Compile Include="Models\ICustomerReponsitory.cs" />
+    <Compile Include="Models\ILoginReponsitory.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\StatialModel.cs" />
+    <Compile Include="Presenters\BookPresenter.cs" />
+    <Compile Include="Presenters\CartPresenter.cs" />
+    <Compile Include="Presenters\ChangePassPresenter.cs" />
+    <Compile Include="Presenters\Common\ModelDataValidation.cs" />
+    <Compile Include="Presenters\ForgotPresenter.cs" />
+    <Compile Include="Presenters\HistoryPresenter.cs" />
+    <Compile Include="Presenters\LoginPresenter.cs" />
+    <Compile Include="Presenters\MainPresenter.cs" />
+    <Compile Include="Presenters\ManagerPresenter.cs" />
+    <Compile Include="Presenters\ProfilePresenter.cs" />
+    <Compile Include="Presenters\RegisterPresenter.cs" />
+    <Compile Include="Presenters\StoryPresenter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reponsitories\BaseReponsitory.cs" />
+    <Compile Include="Reponsitories\BookReponsitory.cs" />
+    <Compile Include="Reponsitories\CustomerReponsitory.cs" />
+    <Compile Include="Reponsitories\LoginReponsitory.cs" />
+    <Compile Include="Views\BookView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BookView.Designer.cs">
+      <DependentUpon>BookView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CartView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CartView.Designer.cs">
+      <DependentUpon>CartView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\cl_BoGoc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\ForgotPasswordView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ForgotPasswordView.Designer.cs">
+      <DependentUpon>ForgotPasswordView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HistoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HistoryView.Designer.cs">
+      <DependentUpon>HistoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IBookView.cs" />
+    <Compile Include="Views\ICustomerView.cs" />
+    <Compile Include="Views\ILoginView.cs" />
+    <Compile Include="Views\IMainView.cs" />
+    <Compile Include="Views\IStoryView.cs" />
+    <Compile Include="Views\LoginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginView.Designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ManagerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ManagerView.Designer.cs">
+      <DependentUpon>ManagerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StoryView.Designer.cs">
+      <DependentUpon>StoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegisteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RegisteView.Designer.cs">
+      <DependentUpon>RegisteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfileView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProfileView.Designer.cs">
+      <DependentUpon>ProfileView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\BookView.resx">
+      <DependentUpon>BookView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CartView.resx">
+      <DependentUpon>CartView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ForgotPasswordView.resx">
+      <DependentUpon>ForgotPasswordView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HistoryView.resx">
+      <DependentUpon>HistoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ManagerView.resx">
+      <DependentUpon>ManagerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StoryView.resx">
+      <DependentUpon>StoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RegisteView.resx">
+      <DependentUpon>RegisteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProfileView.resx">
+      <DependentUpon>ProfileView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\author.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usermain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211707_cart_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_author.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5027891_book_learning_notebook_reading_study_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4781838_cancel_close_delete_exit_logout_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_square_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\under.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2191544_key_lock_login_secret_secure_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4781818_account_avatar_face_man_people_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lastname.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\353411_circle_eye_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2191544_key_lock_login_secret_secure_icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add free.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repair .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4831032_door_entrance_exit_leave_logout_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usermain1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lastname1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3844470_home_house_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7023958_password_account_security_reset_safety_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4831032_door_entrance_exit_leave_logout_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7023958_password_account_security_reset_safety_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cak1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4960717_group_mobile_ui_ux_web_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\author1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\em.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\author2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5027891_book_learning_notebook_reading_study_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4831032_door_entrance_exit_leave_logout_icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savevc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\birthday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8185223bbfd47a79f8bdd6a3ed374a41.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

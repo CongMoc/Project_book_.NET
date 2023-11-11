@@ -1,0 +1,9 @@
+  
+fix lỗi put day từ book sang cart
+view customer
+view employee
+view Thống kê theo thời gian với time được put vào và put ra file Excel
+cài đặt register, fogot pass và change pass với interface là ILoginView
+
+cài đặt view và các event trong manager
+
